@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>banco</title>
+</head>
+
+<body>
+<div class="painel">
+  <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/left.png" alt="left"/>
+  <strong><p>Deposito</p></strong>
+  <div class="img2">
+  <img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/download--v1.png" alt="download--v1"/>
+  <a href="url" download="fature.png">f</a>
+  </div>
+</div>
+<p>ID</p>
+<p>Dia</p>
+<p>Tipo</p>
+<p>Tipo de cartao</p>
+<p>Total do dia</p>
+<p>Taxas</p>
+<p>Valor pago</p>
+<br>
+<p>Codigo da venda</p>
+<p>TDT8277778MM</p>
+<div class="ladoE">
+  <p>SUMUP PID 16396383683</p>
+  <p>03.11.2024</p>
+  <p>Conta bancária</p>
+  <p>Credito</p>
+  <p> R$ 638,00</p>
+  <p>R$ 752,00</p>
+  <p>R$ 484,00</p>
+  <br>
+  <p>Depositada</p>
+  <p>R$ 84.648,00</p>
+</div>
+<div class="valor">
+  <p>Valor</p>
+  <p>R$ 873,00</p>
+</div>
+<div class="psq">
+ <input type="text" oninput="input()"
+ placeholder="pesquisa fatura">
+  <div id="res" style="display:none;">
+    <img src="fatura.png ">
+    
+  </div>
+</div>
+</body>
+<style>
+body{
+  font-family: arial;
+}
+  .painel{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    height:70px;
+    width:453px;
+    margin-left: -50px;
+     display:flex;
+     margin-top: -10px;
+     
+  }
+  .painel p{
+    margin-left: 70px;
+    font-size: 22px;
+    
+  }
+  
+  .ladoE{
+   text-align: end;
+   margin-top: -350px;
+  }
+  .valor{
+    margin-left: 175px;
+    margin-top: -68px;
+  }
+  
+  .painel strong{
+    margin-left: -45px;
+  }
+  
+  .psq{
+    text-align: center;
+  }
+  .psq img{
+    height: 550px;
+    width: 300px;
+  }
+  .psq img:hover{
+    height: 1000px;
+   
+  }
+  a{
+    margin-left: -28px;
+   color:transparent;
+    font-size: 50px;
+  }
+  input{
+    width:200px;
+    height:30px;
+    outline: black;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .painel img{
+    margin-left: 60px;
+    height:40px;
+    width:40px;
+   margin-top: 15px;
+  }
+  .img2 img{
+    margin-left:180px;
+  }
+</style>
+<script>
+  function input(){
+       var res = document.getElementById("res")
+       var input = document.querySelector("input").value
+       if(input == "Fatura" || input == 'Valor'){
+         res.style.display = 'block';
+       }else{
+         res.style.display = 'none';
+       }  
+  }
+</script>
+</html>
